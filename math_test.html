@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Test Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; }
+        form { background: white; padding: 20px; border-radius: 8px; border: 1px solid #ccc; }
+        div { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        textarea { width: 100%; height: 80px; }
+        h1 { text-align: center; color: #333; }
+        .submit-btn { background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Online Math Quiz</h1>
+
+    <form>
+        <div>
+            <label for="username">Student Name:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <hr>
+
+        <div>
+            <p>1. What is the value of 5 &times; 5?</p>
+            <input type="radio" id="q1a" name="q1" value="10">
+            <label for="q1a" style="display:inline;">10</label><br>
+            <input type="radio" id="q1b" name="q1" value="25">
+            <label for="q1b" style="display:inline;">25</label><br>
+            <input type="radio" id="q1c" name="q1" value="50">
+            <label for="q1c" style="display:inline;">50</label>
+        </div>
+
+        <div>
+            <p>2. Which symbol represents "Greater than or equal to"?</p>
+            <input type="radio" id="q2a" name="q2" value="gt">
+            <label for="q2a" style="display:inline;">&gt;</label><br>
+            <input type="radio" id="q2b" name="q2" value="gte">
+            <label for="q2b" style="display:inline;">&ge;</label><br>
+            <input type="radio" id="q2c" name="q2" value="divide">
+            <label for="q2c" style="display:inline;">&divide;</label>
+        </div>
+
+        <div>
+            <p>3. If &pi; &asymp; 3.14, what is the area of a circle with radius 1?</p>
+            <input type="radio" id="q3a" name="q3" value="3.14">
+            <label for="q3a" style="display:inline;">3.14</label><br>
+            <input type="radio" id="q3b" name="q3" value="6.28">
+            <label for="q3b" style="display:inline;">6.28</label><br>
+            <input type="radio" id="q3c" name="q3" value="1.00">
+            <label for="q3c" style="display:inline;">1.00</label>
+        </div>
+
+        <div>
+            <label for="word-problem">4. Word Problem: If John has 12 apples and divides them equally among 4 friends, how many apples does each friend get? Explain your work below:</label>
+            <textarea id="word-problem" name="explanation" placeholder="Write your answer here..."></textarea>
+        </div>
+
+        <div>
+            <button type="submit" class="submit-btn">Submit Test</button>
+        </div>
+
+    </form>
+    </body>
+</html>
